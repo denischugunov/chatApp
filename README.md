@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# ChatApp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**ChatApp** – это приложение для обмена сообщениями, позволяющее пользователям создавать личные профили, находить других участников и общаться с ними в режиме реального времени. все изменения мгновенно отображаются благодаря использованию облачной базы данных.
 
-## Available Scripts
+## 🚀 Основные функции и особенности
 
-In the project directory, you can run:
+- **создание и редактирование профиля пользователя**: 
+  пользователь может создать профиль при регистрации и редактировать его (пример интерфейса редактирования можно посмотреть [здесь](#редактирование-профиля)).
+- **поиск пользователей**: 
+  удобный поиск по базе зарегистрированных пользователей.
+- **создание чатов**: 
+  возможность начать диалог с любым пользователем (примеры интерфейса можно посмотреть [здесь](#смена темы и интерфейс чатов)).
+- **смена темы интерфейса**: 
+  пользователь может переключаться между светлой и тёмной темой (пример интерфейса можно посмотреть [здесь](#смена-темы-и-интерфейс-чатов)).
 
-### `npm start`
+## 🛠️ Используемые технологии
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### основной стек
+- **React**: вся логика и рендеринг приложения.
+- **Redux Toolkit**: для управления состоянием приложения.
+- **React Router**: для реализации клиентского роутинга.
+- **React-scroll**: для анимированного прокручивания контента.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### дополнительные библиотеки
+- **Firebase Authentication**: авторизация пользователей через Firebase.
+- **Formik** и **Yup**: удобная работа с формами и валидацией.
+- **Bootstrap**: базовая верстка с использованием компонентов Bootstrap, стилизованных дополнительными CSS-правилами.
 
-### `npm test`
+## 🏗️ Архитектура приложения
+Проект разработан в классической архитектуре frontend-приложений:
+- **компоненты**:
+  реализованы изолированные и переиспользуемые элементы интерфейса.
+- **pages**:
+  основные страницы приложения, собранные из компонентов.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📂 Работа с данными
+Клиент взаимодействует напрямую с базой данных **Cloud Firestore**, что обеспечивает:
+- мгновенную передачу и обновление данных;
+- обновление интерфейса без необходимости перезагрузки страницы.
 
-### `npm run build`
+## 📸 Примеры интерфейсов
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### смена темы и интерфейс чатов
+![Светлая тема](./public/Images/examples/example_light.png)
+![Тёмная тема](./public/Images/examples/example_dark.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### редактирование профиля
+![Редактирование профиля](./public/Images/examples/example_profile.png)
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ChatApp разработан как удобный и функциональный мессенджер, предоставляющий все необходимое для общения и взаимодействия пользователей в режиме реального времени. 💬
